@@ -1,0 +1,31 @@
+		printf("))))))))))))))))))))))\n");
+		printf("//\n");
+		printf("//\'");
+		printf("\"'\n");
+ch = '\'';
+
+if( ch == '[' || ch == '(' || ch == '{' ) {
+				stack.Push(ch);
+				stack.Display();
+			}
+			else if( ch == ']' || ch == ')' || ch == '}' ) {
+				char prev = stack.Pop();
+				stack.Display();
+
+				if( prev < 0 ) break;
+				if( ( ch == ']' && prev != '[' )
+				||  ( ch == ')' && prev != '(' )
+				||  ( ch == '}' && prev != '{' ) ) break;
+
+			}
+
+
+/* sdfasdf asdfasdf ( {{}}{
+		( */
+
+		// {{{{{{{(((
+		// '
+		// "
+		// //
+		// /*
+

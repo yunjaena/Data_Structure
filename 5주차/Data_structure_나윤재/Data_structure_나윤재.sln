@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "나윤재_실습05_1", "나윤재_실습05_1\나윤재_실습05_1.vcxproj", "{C8BD4DDD-ED60-4B9D-A580-DD162B74E316}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "나윤재_실습05_2", "나윤재_실습05_2\나윤재_실습05_2.vcxproj", "{A8702F06-82F3-496C-BAB0-AD307C53F9D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8BD4DDD-ED60-4B9D-A580-DD162B74E316}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C8BD4DDD-ED60-4B9D-A580-DD162B74E316}.Debug|Win32.Build.0 = Debug|Win32
+		{C8BD4DDD-ED60-4B9D-A580-DD162B74E316}.Release|Win32.ActiveCfg = Release|Win32
+		{C8BD4DDD-ED60-4B9D-A580-DD162B74E316}.Release|Win32.Build.0 = Release|Win32
+		{A8702F06-82F3-496C-BAB0-AD307C53F9D4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A8702F06-82F3-496C-BAB0-AD307C53F9D4}.Debug|Win32.Build.0 = Debug|Win32
+		{A8702F06-82F3-496C-BAB0-AD307C53F9D4}.Release|Win32.ActiveCfg = Release|Win32
+		{A8702F06-82F3-496C-BAB0-AD307C53F9D4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
