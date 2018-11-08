@@ -4,7 +4,7 @@ class LinkedList{
 public:
 	LinkedList():head(NULL){}
 	~LinkedList(){clear();}
-	void clear(){while(!isEmpty()) delete remove(0);}
+	void clear(){while(!isEmpty()) delete removeInList(0);}
 	Node* getHead() { return head;}
 	bool isEmpty() { return getHead() == NULL;}
 
@@ -19,7 +19,7 @@ public:
 
 
 
-	void insert(int pos, Node *n){
+	void insertInList(int pos, Node *n){
 		if(pos == 0){
 			n->setLink(head);
 			head = n;
@@ -33,7 +33,7 @@ public:
 		}
 	}
 
-	Node* remove(int pos){
+	Node* removeInList(int pos){
 		Node* p;
 		if(pos == 0){
 			p = head;
@@ -55,8 +55,8 @@ public:
 	}
 
 	void replace(int pos, Node *n){
-		delete remove(pos);
-		insert(pos, n);
+		delete removeInList(pos);
+		insertInList(pos, n);
 	}
 
 	int size(){
@@ -67,7 +67,14 @@ public:
 	}
 
 	void display(){
-		printf("[(전체 항목 수(역순 출력)= %2d] : ", size());
+		printf("[(전체 항목 수(순방향 출력)= %2d] : ", size());
+		for(Node *p = getHead() ; p!= NULL ; p=p->getLink())
+			p->display();
+		printf( "\n");
+	}
+
+	void reverseDisplay2(){
+		printf("[(전체 항목 수(역  순 출력)= %2d] : ", size());
 		reverse(getHead());
 		printf( "\n");
 	}
